@@ -1,0 +1,136 @@
+:root{
+    --blue:hsl(223, 87%, 63%);
+    --pBlue:hsl(223, 100%, 88%);
+    --lRed: hsl(354, 100%, 66%);
+    --gray:hsl(0, 0%, 59%);
+    --vdBlue:hsl(209, 33%, 12%);
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.wrapper{
+    margin: auto;
+}
+h1{
+    font-weight: 400;
+    color: var(--gray);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+#sub{
+  color: var(--vdBlue);
+    margin-bottom: 30px;
+}
+#bold{
+    font-weight: 700;
+    color: var(--vdBlue);
+}
+#logo{
+    background-image: url("images/logo.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-top: 50px;
+}
+#intro{
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    align-items: center;
+   width: 100%;
+}
+#input{
+   
+    display: flex;
+    width: 90%;
+}
+
+input[type="text"]{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 50px;
+  outline: none;
+    border: solid 1pt var(--pBlue);
+   
+}
+input[type="text"]::placeholder{
+    color: var(--pBlue);
+    margin-left: 30px;
+    font-size: 15px;
+}
+input[type="button"]{
+    margin-top: 15px;
+background-color: var(--blue);
+border-radius: 50px;
+border:none;
+color:white;
+font-size: 15px;
+cursor: pointer;
+font-weight: 600;}
+
+input[type="button"]:hover{
+   opacity: 0.8;
+   transition: all 0.1s ease;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    margin-bottom:40px;
+}
+#stats{
+    background-image: url("images/illustration-dashboard.png");
+    width: 90%;
+    height:400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+i{
+    color:var(--blue);
+    border:solid 1pt var(--pBlue);
+ padding:10px 13px 10px 13px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+i:hover{
+    background-color: var(--blue);
+    color:white;
+    transition: all 0.3s ease;
+}
+#cr{
+    font-size: 12px;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 40px;
+}
+label{
+    color: var(--lRed);
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom:20px;
+}
+@media(max-width:700px){
+    .wrapper{
+        width: 90%;
+    }
+    #logo{
+        width: 30%;
+        height:50px;
+    }
+    #input{
+        align-items: center;
+      
+        flex-direction: column;
+    }
+    input[type="text"]{
+        max-width: 100%;
+    }
+    input[type="button"]{
+    width: 100%;
+    padding:20px 40px 20px 40px;
+    margin-bottom:70px;
+    }
+}
